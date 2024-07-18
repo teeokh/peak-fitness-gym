@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.company.com/about">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content="./images/social.jpg"/>
+    <meta property="og:image:secure_url" content="./images/social.jpg"/>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="./images/cabinets2-m.jpg">
+    <link rel="preload" as="font" type="font/woff2" href=".fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href=".fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/dark.css">
+
+    <!--Put analytics tag here at the bottom to prevent it from render blocking-->
+
+    <title>Peak Fitness Gym | Barnet's number 1 gym for athletes & high performers | London, UK</title>
+</head>
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href=".#main">Click To Skip To Main Content</a>
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="./images/gym-logo-orange.png" alt="logo" width="340" height="150" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="./index.html" class="cs-li-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="./about.html" class="cs-li-link cs-active">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="./services.html" class="cs-li-link">
+                            Services
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="./reviews.html" class="cs-li-link">
+                            Reviews
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="./contact.html" class="cs-li-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">Join Today</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button>
+    </div>
+</header>
+
+    <main id="main">
+
+        <!-- ============================================ -->
+        <!--                    LANDING                   -->
+        <!-- ============================================ -->
+    
+        <section id="int-hero">
+            <h1 id="home-h">About Us</h1>
+            <picture>
+                <source media="(max-width: 600px)" srcset="./images/gym-main.png">
+                <source media="(min-width: 601px)" srcset="./images/gym-main.png">
+                <img aria-hidden="true" decoding="async" src="./images/gym-main.png" alt="cabinets" width="400" height="662">
+            </picture>
+        </section>
+
+<!-- ============================================ -->
+<!--                Why Choose Us                 -->
+<!-- ============================================ -->
+
+<section id="why-choose-1876">
+    <div class="cs-container">
+        <div class="cs-video-wrapper">
+            <!--Compress your video and upload it to a CDN like Digital Oceans Spaces so the video file doesn't cause load time issues. You can also remove the video tag and uncomment the picture tag to use a image instead of a video. Don't forget to remove the cs-play button!-->
+            <video loading="lazy" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Videos/gym.mp4" autoplay="false"></video>
+            <!-- <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.jpg" alt="body builder" width="630" height="877">
+                </picture> -->
+            <button class="cs-play" aria-label="click to play video">
+                <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/play-right.svg" alt="play icon" class="cs-icon" width="24" height="24" aria-hidden="true" decoding="async">
+            </button>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Why Choose Us</span>
+            <h2 class="cs-title">We Push The Limits Of Your Core Strength</h2>
+            <p class="cs-text">
+                We understand that your lifestyle changes, that’s why we’ve made fitness straightforward and stress free. Join today on a no lock-in contract membership and start achieving your fitness goals. We value flexibility at Jetts, with unlimited 24/7 access.
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
+                    22,000 square feet Gym
+                </li>
+                <li class="cs-li">
+                    <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
+                    State of the Art Equipment
+                </li>
+                <li class="cs-li">
+                    <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
+                    Series Results Based on Training
+                </li>
+                <li class="cs-li">
+                    <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/orange-check.svg" alt="checkmark" width="20" height="20">
+                    Programs for weight loss
+                </li>
+            </ul>
+            <a class="cs-button-solid" href="">Enroll Now</a>
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png" alt="people" width="608" height="406">
+            </picture>
+        </div>
+    </div>
+    <!--White Splash Graphic-->
+    <img class="cs-graphic cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/f7-splatter.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+    <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+    <!-- <img class="cs-graphic cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-mode-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async"> -->
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-1761">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <img class="cs-logomark" src="./images/gym-logo-orange.png" alt="logo" loading="lazy" decoding="async" height="100" width="122">
+            <h2 class="cs-title">Achieve <br>Wellbeing</h2>
+            <span class="cs-outline">Core Strength</span>
+        </div>
+        <div class="cs-ul-wrapper">
+            <!-- Contact Info -->
+            <img class="cs-logo" src="./images/gym-logo-orange.png" alt="logo" loading="lazy" decoding="async" height="48" width="217">
+            <p class="cs-text">Welcome to Peak Fitness Gym! We believe that true wellness encompasses the mind, body & soul. </p>
+            <ul class="cs-ul cs-ul-contact">
+                <li class="cs-li">
+                    <span class="cs-topper">Call us anytime</span>
+                    <a class="cs-contact" href="">+44 781 482 5375</a>
+                </li>
+                <li class="cs-li">
+                    <span class="cs-topper">Visit our location</span>
+                    <a class="cs-contact" href="">55 Barnet High Street <br>London, UK - EN3 6FW</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Our Services</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class="cs-link" href="">Personal Training</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Group Workout</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Muscle Building</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Virtual Gym Training</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Weightloss Training</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="">Body Stretching</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright 2024 <a href="" class="cs-credit-link" target="_blank">Peak Fitness Gym</a>
+        </span>
+        <div class="cs-bottom-links">
+            <a href="" class="cs-bottom-link">Terms & Conditions</a>
+            <a href="" class="cs-bottom-link">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+    </main>
+    <script defer src="./nav.js"></script>
+    <script defer src="./dark.js"></script>
+    <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+    <script defer>
+        document.addEventListener('scroll', (e) => { 
+            const scroll = document.documentElement.scrollTop;
+            if(scroll >= 100){
+        document.querySelector('body').classList.add('scroll')
+            } else {
+            document.querySelector('body').classList.remove('scroll')
+            }
+        });
+    </script>
+
+</body>
+</html>

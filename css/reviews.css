@@ -1,0 +1,334 @@
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews-1739 {
+    padding: var(--sectionPadding);
+    position: relative;
+  }
+  #reviews-1739 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 49rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #reviews-1739 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #reviews-1739 .cs-title {
+    max-width: 24ch;
+    margin: 0;
+  }
+  #reviews-1739 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #reviews-1739 .cs-item {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-column: span 12;
+    grid-row: span 1;
+  }
+  #reviews-1739 .cs-picture {
+    width: 100%;
+    min-height: 21.25rem;
+    display: block;
+    position: relative;
+    /* causes this element to grow to its maximum width, before its sibling elements take up the remaining space */
+    flex: 1 0 auto;
+  }
+  #reviews-1739 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+    /* pushes the top of the image to the top of the container */
+    object-position: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #reviews-1739 .cs-review {
+    text-align: left;
+    width: 100%;
+    /* prevents padding from affecting height and wodth */
+    box-sizing: border-box;
+    /* left & right 16px - 32px */
+    padding: 2rem clamp(1rem, 5vw, 2rem);
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #reviews-1739 .cs-info {
+    background-color: #f7f7f7;
+  }
+  #reviews-1739 .cs-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0 0 0.25rem;
+    color: var(--headerColor);
+    display: block;
+  }
+  #reviews-1739 .cs-flex {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #reviews-1739 .cs-desc {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5em;
+    color: var(--primary);
+    display: block;
+  }
+  #reviews-1739 .cs-item-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #reviews-1739 .cs-boxes {
+    display: flex;
+  }
+  #reviews-1739 .cs-box {
+    /* 24px - 32px top & bottom, 16px - 32px left & right */
+    padding: clamp(1.5rem, 2vw, 2rem) clamp(1rem, 2vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* causes the boxes to grow, equally, within the parent container */
+    flex: 1;
+  }
+  #reviews-1739 .cs-box-light {
+    background-color: #e8e8e8;
+  }
+  #reviews-1739 .cs-box-dark {
+    background-color: #1a1a1a;
+    color: #f7f7f7;
+  }
+  #reviews-1739 .cs-weight {
+    /* 25px - 31px */
+    font-size: clamp(1.5625rem, 4vw, 1.9375rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0 0 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #reviews-1739 .cs-arrow {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+  #reviews-1739 .cs-tagline {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  #reviews-1739 .cs-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #reviews-1739 .cs-item {
+    flex-direction: row;
+  }
+  #reviews-1739 .cs-picture {
+    max-width: 15rem;
+    min-height: 0;
+  }
+}
+/* Large Desktop - 1200px */
+@media only screen and (min-width: 75rem) {
+  #reviews-1739 .cs-container {
+    max-width: 80rem;
+  }
+  #reviews-1739 .cs-item {
+    grid-column: span 6;
+  }
+  #reviews-1739 .cs-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #reviews-1739 .cs-title,
+  body.dark-mode #reviews-1739 .cs-name,
+  body.dark-mode #reviews-1739 .cs-desc,
+  body.dark-mode #reviews-1739 .cs-item-text,
+  body.dark-mode #reviews-1739 .cs-weight,
+  body.dark-mode #reviews-1739 .cs-tagline {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #reviews-1739 .cs-info {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #reviews-1739 .cs-item-text,
+  body.dark-mode #reviews-1739 .cs-desc,
+  body.dark-mode #reviews-1739 .cs-tagline {
+    opacity: 0.8;
+  }
+  body.dark-mode #reviews-1739 .cs-flex {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  body.dark-mode #reviews-1739 .cs-box-light {
+    background-color: var(--accent);
+  }
+  body.dark-mode #reviews-1739 .cs-box-dark {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #cta {
+    position: relative;
+    padding: 3.125em 0;
+  }
+  #cta:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta .container {
+    text-align: center;
+  }
+  #cta picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+  #cta picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #cta .title {
+    font-weight: 900;
+    font-size: min(9vw, 3em);
+    line-height: 1.20833333;
+    color: #fff;
+    position: relative;
+    margin-bottom: 0.75em;
+    text-align: center;
+  }
+  #cta p {
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 96%;
+    max-width: 33.22222222em;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #cta {
+    padding: 10.5em 0;
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #cta {
+    position: relative;
+    margin-top: 6.25em;
+  }
+  #cta:before {
+    display: none;
+  }
+  #cta:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 69.25em;
+    width: 125em;
+    background: url("../images/cta-squares.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -3;
+  }
+  #cta .container {
+    width: 90.0625%;
+    margin: auto;
+  }
+  #cta picture {
+    width: 90.0625%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #cta picture:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #cta:after {
+    display: none;
+  }
+}

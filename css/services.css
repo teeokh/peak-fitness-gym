@@ -1,0 +1,288 @@
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-1847 {
+    padding: var(--sectionPadding);
+    background-color: #ffffff;
+  }
+  #services-1847 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-1847 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 33.875rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #services-1847 .cs-title {
+    /* 28px - 44px */
+    margin: 0 0 clamp(1.75rem, 6vw, 2.75rem);
+    color: var(--1a1a1a);
+  }
+  #services-1847 .cs-ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #services-1847 .cs-li {
+    width: 100%;
+    border-bottom: 1px solid #767676;
+  }
+  #services-1847 .cs-link {
+    text-decoration: none;
+    padding: 1.25rem 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #services-1847 .cs-link:hover .cs-h3 {
+    color: var(--primary);
+  }
+  #services-1847 .cs-link:hover .cs-icon {
+    transform: scale(1.2);
+  }
+  #services-1847 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--primary);
+    transition: color 0.3s;
+  }
+  #services-1847 .cs-icon {
+    width: 2rem;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+    transform-origin: bottom left;
+  }
+  #services-1847 .cs-image-group {
+    /* scales the whole group based on the view width size and stop when that vales equals .8rem, resets at tablet */
+    font-size: min(2.235vw, .8em);
+    width: 39.375em;
+    height: 38.3125em;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #services-1847 .cs-picture {
+    position: absolute;
+  }
+  #services-1847 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #services-1847 .cs-picture1 {
+    width: 25.8125em;
+    height: 33.75em;
+    top: 0;
+    left: 0;
+  }
+  #services-1847 .cs-picture2 {
+    width: 19.0625em;
+    height: 22.8125em;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+  #services-1847 .cs-floater {
+    /* 62px - 120px */
+    width: clamp(3.875rem, 14vw, 7.5rem);
+    height: clamp(3.875rem, 14vw, 7.5rem);
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 34%;
+    left: 57%;
+    z-index: 10;
+    transform: translate(-50%);
+  }
+  #services-1847 .cs-floater-icon {
+    /* 32px - 60px */
+    width: clamp(2rem, 4.6vw, 3.75rem);
+    height: auto;
+    display: block;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-1847 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #services-1847 .cs-content {
+    text-align: left;
+    padding: 3.25rem 0;
+    align-items: flex-start;
+    align-self: center;
+  }
+  #services-1847 .cs-image-group {
+    font-size: min(1.265vw, 1rem);
+    height: auto;
+    min-height: 38.3125em;
+    flex: none;
+  }
+  #services-1847 .cs-picture1 {
+    height: 88.091354%;
+  }
+  #services-1847 .cs-picture2 {
+    height: 59.54323%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #services-1847 {
+    background-color: var(--dark);
+  }
+  body.dark-mode #services-1847 .cs-title {
+    color: white;
+  }
+}
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #cta {
+    position: relative;
+    padding: 3.125em 0;
+  }
+  #cta:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta .container {
+    text-align: center;
+  }
+  #cta picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+  #cta picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #cta .title {
+    font-weight: 900;
+    font-size: min(9vw, 3em);
+    line-height: 1.20833333;
+    color: #fff;
+    position: relative;
+    margin-bottom: 0.75em;
+    text-align: center;
+  }
+  #cta p {
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 96%;
+    max-width: 33.22222222em;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #cta {
+    padding: 10.5em 0;
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #cta {
+    position: relative;
+    margin-top: 6.25em;
+  }
+  #cta:before {
+    display: none;
+  }
+  #cta:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 69.25em;
+    width: 125em;
+    background: url("../images/cta-squares.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -3;
+  }
+  #cta .container {
+    width: 90.0625%;
+    margin: auto;
+  }
+  #cta picture {
+    width: 90.0625%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #cta picture:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #cta:after {
+    display: none;
+  }
+}
